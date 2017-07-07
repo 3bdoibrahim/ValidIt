@@ -9,11 +9,13 @@ Include it in your project:
 
 ```php
 require "validit.class.php";
+
 $validator = new ValidIt();
 $rules = array(
 	'username' => 'required|alpha_numeric',
 	'password' => 'required|min_len:5|max_len:50'
 );
+
 $is_valid = $validator->is_valid($_POST, $rules);
 
 if($is_valid === true) {
@@ -36,7 +38,7 @@ get_errors();
 
 # Example
 
-The following example is part of a registration form, the flow should be pretty standard
+The following example is part of a registration form:
 
 ```php
 require "validit.class.php";
@@ -47,8 +49,7 @@ $rules = array(
     'username' => 'required|alpha_numeric|min_len:5|max_len:50',
     'password' => 'required|min_len:5|max_len:50',
     'email' => 'required|email',
-    'gender' => 'required|exact_len:1|contains:{m,f}',
-    'credit_card' => 'required|cc'
+    'gender' => 'required|exact_len:1|contains:{m,f}'
 );
 
 $is_valid = $validit->is_valid($_POST, $rules);
