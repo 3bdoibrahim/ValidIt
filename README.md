@@ -1,5 +1,5 @@
 # Getting started
-ValidIt is an extensible and standalone PHP data validation class that makes validating any data easy and painless.
+ValidIt is standalone PHP data validation class that makes validating any data easy and painless.
 
 ## Installation
 1. Download ValidIt
