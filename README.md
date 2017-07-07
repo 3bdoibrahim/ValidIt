@@ -34,7 +34,7 @@ is_valid(array $data, array $rules)
 get_errors();
 ```
 
-# Example (Long format)
+# Example
 
 The following example is part of a registration form, the flow should be pretty standard
 
